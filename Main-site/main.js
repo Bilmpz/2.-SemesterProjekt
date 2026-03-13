@@ -126,7 +126,7 @@ async function tjekBruger() {
     let svar = await supabase.auth.getSession()
 
     if (!svar.data.session) {
-        window.location.href = '../Login-site/index.html'
+        window.location.href = '..https://bilmpz.github.io/2.-SemesterProjekt/'
         return
     }
 
@@ -136,7 +136,7 @@ async function tjekBruger() {
 
 async function logUd() {
     await supabase.auth.signOut()
-    window.location.href = '../Login-site/index.html'
+    window.location.href = '..https://bilmpz.github.io/2.-SemesterProjekt/'
 }
 
 createPostBtn.addEventListener('click', opretOpslag)

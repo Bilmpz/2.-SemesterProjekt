@@ -71,7 +71,7 @@ async function glemtKodeord() {
     }
 
     let svar = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: 'http://127.0.0.1:5500/Login-site/index.html'
+        redirectTo: 'https://bilmpz.github.io/2.-SemesterProjekt/'
     })
 
     if (svar.error) {
@@ -85,7 +85,7 @@ async function tjekSession() {
     let svar = await supabase.auth.getSession()
 
     if (svar.data.session) {
-        window.location.href = '../Main-site/main.html'
+        window.location.href = '../main.html'
     }
 }
 
