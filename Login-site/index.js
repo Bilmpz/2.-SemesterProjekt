@@ -7,6 +7,8 @@ let signupBtn = document.getElementById('signup-btn')
 let forgotPasswordBtn = document.getElementById('forgot-password')
 let statusText = document.getElementById('status')
 
+alert("Under udvikling - Brug ikke")
+
 function visBesked(tekst, erFejl) {
     statusText.textContent = tekst
 
