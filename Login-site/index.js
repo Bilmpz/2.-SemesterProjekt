@@ -37,7 +37,7 @@ async function login() {
         visBesked(svar.error.message, true)
     } else {
         visBesked('Du er nu logget ind', false)
-        window.location.href = '../Main-site/main.html'
+        window.location.href = '../main.html'
     }
 }
 
