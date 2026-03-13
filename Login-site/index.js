@@ -7,7 +7,7 @@ let signupBtn = document.getElementById('signup-btn')
 let forgotPasswordBtn = document.getElementById('forgot-password')
 let statusText = document.getElementById('status')
 
-alert("Under udvikling - Brug ikke")
+alert('Under udvikling - Brug ikke')
 
 function visBesked(tekst, erFejl) {
     statusText.textContent = tekst
@@ -35,10 +35,12 @@ async function login() {
 
     if (svar.error) {
         visBesked(svar.error.message, true)
-    } else {
-        visBesked('Du er nu logget ind', false)
-        window.location.href = '../main.html'
+        return
     }
+
+    visBesked('Du er nu logget ind', false)
+
+    window.location.href = 'main.html'
 }
 
 async function opretBruger() {
@@ -57,9 +59,10 @@ async function opretBruger() {
 
     if (svar.error) {
         visBesked(svar.error.message, true)
-    } else {
-        visBesked('Bruger oprettet', false)
+        return
     }
+
+    visBesked('Bruger oprettet', false)
 }
 
 async function glemtKodeord() {
@@ -71,21 +74,22 @@ async function glemtKodeord() {
     }
 
     let svar = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: 'https://bilmpz.github.io/2.-SemesterProjekt/'
+        redirectTo: 'https://bilmpz.github.io/2.-SemesterProjekt/index.html'
     })
 
     if (svar.error) {
         visBesked(svar.error.message, true)
-    } else {
-        visBesked('Mail sendt', false)
+        return
     }
+
+    visBesked('Mail sendt', false)
 }
 
 async function tjekSession() {
     let svar = await supabase.auth.getSession()
 
     if (svar.data.session) {
-        window.location.href = '../main.html'
+        window.location.href = 'main.html'
     }
 }
 

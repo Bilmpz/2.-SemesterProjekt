@@ -50,6 +50,7 @@ let rooms = [
 
 function visOpslag() {
     postsList.innerHTML = ''
+
     for (let i = 0; i < posts.length; i++) {
         let post = posts[i]
 
@@ -126,7 +127,7 @@ async function tjekBruger() {
     let svar = await supabase.auth.getSession()
 
     if (!svar.data.session) {
-        window.location.href = '..https://bilmpz.github.io/2.-SemesterProjekt/'
+        window.location.href = 'index.html'
         return
     }
 
@@ -136,7 +137,7 @@ async function tjekBruger() {
 
 async function logUd() {
     await supabase.auth.signOut()
-    window.location.href = '..https://bilmpz.github.io/2.-SemesterProjekt/'
+    window.location.href = 'index.html'
 }
 
 createPostBtn.addEventListener('click', opretOpslag)
