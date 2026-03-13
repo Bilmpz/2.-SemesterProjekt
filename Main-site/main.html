@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy - Forside</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>Study Buddy</h1>
+        <button id="logout-btn">Log ud</button>
+    </header>
+
+    <main class="container">
+        <section class="welcome-box">
+            <h2>Velkommen</h2>
+            <p id="user-email">Du er logget ind</p>
+        </section>
+
+        <section class="form-box">
+            <h2>Lav et opslag</h2>
+
+            <input type="text" id="title" placeholder="Titel på opslag">
+            <input type="text" id="subject" placeholder="Fag">
+            <input type="date" id="date">
+            <input type="time" id="time">
+            <input type="text" id="location" placeholder="Sted">
+            <textarea id="description" placeholder="Beskrivelse"></textarea>
+
+            <button id="create-post-btn">Opret opslag</button>
+        </section>
+
+        <section class="posts-box">
+            <h2>Studieopslag</h2>
+            <div id="posts-list"></div>
+        </section>
+
+        <section class="rooms-box">
+            <h2>Ledige rum</h2>
+            <div id="rooms-list"></div>
+        </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

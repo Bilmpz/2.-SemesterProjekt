@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#2d2a57;
+    color:#111;
+    min-height:100vh;
+}
+
+
+.topbar{
+    background:#e6e6e6;
+    border-radius:14px;
+    width:1100px;
+    margin:30px auto 20px auto;
+    padding:18px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.18);
+}
+
+.topbar button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    background:#c62828;
+    color:white;
+    cursor:pointer;
+}
+
+.container{
+    width:1100px;
+    margin:auto;
+    display:grid;
+    gap:20px;
+}
+
+.welcome-box,
+.form-box,
+.posts-box,
+.rooms-box{
+    background:#e6e6e6;
+    border-radius:14px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.18);
+}
+
+h2{
+    margin-bottom:14px;
+    font-size:20px;
+}
+
+.form-box{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input, textarea{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #bfc3c9;
+    background:#f3f3f3;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2d2a57;
+    background:rgb(218, 218, 218)
+}
+
+
+.form-box button{
+    width:200px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#4caf50;
+    color:white;
+    cursor:pointer;
+}
+
+.form-box button:hover{
+    background:#449d48;
+}
+
+.card{
+    border-radius:10px;
+    background:#ffffff;
+    border:1px solid #000000;
+    padding:16px;
+    margin-bottom:12px;
+}

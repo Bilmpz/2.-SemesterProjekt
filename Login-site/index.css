@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2d2a57;
+}
+
+.main-login-boks {
+    width: 760px;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e6e6e6;
+    padding: 50px 60px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Venstre side */
+.logo-box {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #2d2a57;
+    padding: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Højre side */
+.login-form {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #111;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #bfc3c9;
+    border-radius: 8px;
+    background: #f3f3f3;
+    font-size: 14px;
+    color: #222;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2d2a57;
+    background: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Login knap */
+#login-btn {
+    background: #4caf50;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#login-btn:hover {
+    background: #449d48;
+}
+
+/* Opret bruger knap */
+#signup-btn {
+    background: transparent;
+    color: #2d2a57;
+    border: 1px solid #2d2a57;
+    margin-bottom: 10px;
+}
+
+#signup-btn:hover {
+    background: rgba(45, 42, 87, 0.08);
+}
+
+#forgot-password {
+    margin-top: 2px;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+#forgot-password:hover {
+    text-decoration: underline;
+}
+
+#status {
+    margin-top: 12px;
+    font-size: 13px;
+    min-height: 18px;
+    color: #333;
+}
