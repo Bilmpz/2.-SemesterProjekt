@@ -50,7 +50,6 @@ let rooms = [
 
 function visOpslag() {
     postsList.innerHTML = ''
-
     for (let i = 0; i < posts.length; i++) {
         let post = posts[i]
 
